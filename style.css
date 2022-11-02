@@ -18,9 +18,13 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.news:nth-child(even) {
-    background-color: gray;
+.news {
+    
     padding: 50px 0 32px;
+}
+
+article:nth-child(even){
+    background-color: gray;
 }
 
 article {
@@ -39,15 +43,11 @@ article a:hover {
     color: #ff8200;
 }
 
-article h2 {
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-    
-}
-#new::before {
+article:nth-child(-n+2) h2::before {
     content: "New";
     color: MediumSpringGreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
 }
 
 .article-meta {
